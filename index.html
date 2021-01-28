@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Анкета</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+
+
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Анкета</h1>
+
+    <div class="block1">
+        <h2>Шаг 1: Основная информация</h2>
+
+        <form action="" method="post">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="fullName" placeholder="" >
+                <label for="fullName">Ф.И.О</label>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="email" placeholder="" >
+                <label for="email">Адрес электронноый почты</label>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input type="date" class="form-control" id="age" placeholder="" >
+                <label for="age">Дата рождения</label>
+            </div>
+
+
+            <div class="form-floating mb-3">
+                <input type="tel" class="form-control" id="phoneNumber" placeholder="" >
+                <label for="phoneNumber">Номер телефона</label>
+            </div>
+
+            <fieldset class="border p-2">
+                <legend  class="w-auto" style="font-size: 18px">Пол</legend>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radioSex" id="sexMan" checked>
+                    <label class="form-check-label" for="sexMan">
+                        Муж
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radioSex" id="sexWoman" >
+                    <label class="form-check-label" for="sexWoman">
+                        Жен
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radioSex" id="sexNone">
+                    <label class="form-check-label" for="sexNone">
+                        Не указан
+                    </label>
+                </div>
+            </fieldset>
+
+            <button type="button" id="submitInfo" class="btn btn-primary mt-3">Далее</button>
+            <button type="reset" id="reset" class="btn btn-primary mt-3">Сброс</button>
+        </form>
+    </div>
+    <div class="block2">
+        <h2>Шаг 2: Второстепенная информация</h2>
+
+        <form action="" method="post">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="nickName" placeholder="">
+                <label for="nickName">Ник нейм</label>
+            </div>
+
+            <div class="form-floating mb-3 avatar">
+                <input type="file" class="form-control" id="avatar" placeholder="">
+                <label for="avatar">Загрузить аватарку</label>
+            </div>
+
+            <div class="form-floating mb-3 height">
+                <input type="number" class="form-control" id="height" placeholder="" min="0">
+                <label for="height">Рост см</label>
+            </div>
+
+            <div class="form-floating mb-3 weight">
+                <input type="number" class="form-control" id="weight" placeholder="" min="0">
+                <label for="weight">Вес кг</label>
+            </div>
+
+            <div class="form-floating mb-3 hairColor">
+                <input type="color" class="form-control" id="hairColor" placeholder="">
+                <label for="hairColor">Цвет волос</label>
+            </div>
+
+
+            <button type="submit" class="btn btn-primary mt-3">Далее</button>
+            <button type="reset" class="btn btn-primary mt-3">Сброс</button>
+        </form>
+    </div>
+    <div class="block3">
+        <h2>Шаг 3: Место жительства</h2>
+
+        <form action="" method="post">
+            <select class="form-select mb-3" name="countrySelect" id="country">
+                <optgroup label="Европа">
+                    <option value="Россия">Россия</option>
+                    <option value="Белоруссия">Белоруссия</option>
+                    <option value="Украина">Украина</option>
+                </optgroup>
+                <optgroup label="Азия">
+                    <option value="Китай">Китай</option>
+                    <option value="Япония">Япония</option>
+                    <option value="Южная-Корея">Южная-Корея</option>
+                </optgroup>
+                <optgroup label="Северня Америка">
+                    <option value="США">Россия</option>
+                    <option value="Канада">Белоруссия</option>
+                    <option value="Мексика">Мексика</option>
+                </optgroup>
+                <optgroup label="Южная Америка">
+                    <option value="Бразилия">Бразилия</option>
+                    <option value="Аргентина">Аргентина</option>
+                    <option value="Колумбия">Колумбия</option>
+                </optgroup>
+                <option selected>Выберите страну</option>
+            </select>
+
+            <select class="form-select mb-3" name="citySelect" id="city">
+                <option selected>Выберите город</option>
+                <option value="Ростов">Ростов</option>
+                <option value="Москва">Москва</option>
+                <option value="Санкт-Петербург">Санкт-Петербург</option>
+                <option value="Екатиринбург">Екатиринбург</option>
+                <option value="Нижний-Новгород">Нижний-Новгород</option>
+                <option value="Владивосток">Владивосток</option>
+            </select>
+
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="address">
+                <label for="address">Улица, проспект, переулок</label>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control addressNumber" id="addressNumber">
+                <label for="addressNumber">Номер дома</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary mt-3">Далее</button>
+            <button type="reset" class="btn btn-primary mt-3">Сброс</button>
+        </form>
+    </div>
+    <div class="block4">
+        <h2>Шаг 4: Прочее</h2>
+
+        <form action="" method="post">
+
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control " id="otherInfo">
+                <label for="otherInfo">Здесь вы можете указать любую инфрормацию, которую считаете нужной</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary mt-3">Финиш</button>
+            <button type="reset" class="btn btn-primary mt-3">Сброс</button>
+        </form>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

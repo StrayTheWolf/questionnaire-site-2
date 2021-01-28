@@ -1,0 +1,33 @@
+h1{
+text-align: center;
+}
+h2{
+    text-align: center;
+}
+
+.block1{
+
+}
+
+.hairColor{
+    width: 120px;
+}
+.height{
+    width: 100px;
+}
+.weight{
+    width: 100px;
+}
+
+.avatar{
+    width: 500px;
+}
+
+.addressNumber{
+    width: 100px;
+}
+
+.container{
+    width: 800px;
+    padding-top: 20px;
+}
