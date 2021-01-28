@@ -25,23 +25,23 @@
 
         <form action="" method="post">
             <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="fullName" placeholder="" >
+                <input type="text" class="form-control search" id="fullName" placeholder="" >
                 <label for="fullName">Ф.И.О</label>
             </div>
 
             <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="email" placeholder="" >
+                <input type="email" class="form-control search" id="email" placeholder="" >
                 <label for="email">Адрес электронноый почты</label>
             </div>
 
             <div class="form-floating mb-3">
-                <input type="date" class="form-control" id="age" placeholder="" >
+                <input type="date" class="form-control search" id="age" placeholder="" >
                 <label for="age">Дата рождения</label>
             </div>
 
 
             <div class="form-floating mb-3">
-                <input type="tel" class="form-control" id="phoneNumber" placeholder="" >
+                <input type="tel" class="form-control search" id="phoneNumber" placeholder="" >
                 <label for="phoneNumber">Номер телефона</label>
             </div>
 
@@ -68,7 +68,7 @@
                 </div>
             </fieldset>
 
-            <button type="button" id="submitInfo" class="btn btn-primary mt-3">Далее</button>
+            <button type="button" onclick="addArray()" id="submitInfo" class="btn btn-primary mt-3">Далее</button>
             <button type="reset" id="reset" class="btn btn-primary mt-3">Сброс</button>
         </form>
     </div>
