@@ -10,30 +10,19 @@ function addArray(){
         array[i] = data[i].value;
     }
     console.log(array);
-};
+}
+
+function showSummary(){
+    for (let i = 0; i < array.length; i++){
+        let html = array[i];
+        document.getElementById('summary').insertAdjacentHTML("beforeend", ' ' + html + ' ');
+    }
+}
 
 
 
 document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('submitInfo').addEventListener('click', () => {
 
-        let name = getInfo('fullName')
-        console.log(name);
-
-
-        (function() {
-            let inputs = document.querySelectorAll('.search');
-            let arrayData = [];
-
-            function save() {
-                for (let i = 0; i < inputs.length; i++) {
-                    arrayData[i] = inputs[i].value;
-                }
-                console.log(arrayData);
-            }
-            save();
-        })();
-
     })
-
 })

@@ -31,3 +31,9 @@ h2{
     width: 800px;
     padding-top: 20px;
 }
+
+.summaryInfo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}

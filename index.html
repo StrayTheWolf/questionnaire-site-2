@@ -68,7 +68,7 @@
                 </div>
             </fieldset>
 
-            <button type="button" onclick="addArray()" id="submitInfo" class="btn btn-primary mt-3">Далее</button>
+            <button type="button" onclick="addArray()" oncancel="disableBlock()" id="submitInfo" class="btn btn-primary mt-3">Далее</button>
             <button type="reset" id="reset" class="btn btn-primary mt-3">Сброс</button>
         </form>
     </div>
@@ -77,32 +77,32 @@
 
         <form action="" method="post">
             <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="nickName" placeholder="">
+                <input type="text" class="form-control search" id="nickName" placeholder="">
                 <label for="nickName">Ник нейм</label>
             </div>
 
             <div class="form-floating mb-3 avatar">
-                <input type="file" class="form-control" id="avatar" placeholder="">
+                <input type="file" class="form-control search" id="avatar" placeholder="">
                 <label for="avatar">Загрузить аватарку</label>
             </div>
 
             <div class="form-floating mb-3 height">
-                <input type="number" class="form-control" id="height" placeholder="" min="0">
+                <input type="number" class="form-control search" id="height" placeholder="" min="0">
                 <label for="height">Рост см</label>
             </div>
 
             <div class="form-floating mb-3 weight">
-                <input type="number" class="form-control" id="weight" placeholder="" min="0">
+                <input type="number" class="form-control search" id="weight" placeholder="" min="0">
                 <label for="weight">Вес кг</label>
             </div>
 
             <div class="form-floating mb-3 hairColor">
-                <input type="color" class="form-control" id="hairColor" placeholder="">
+                <input type="color" class="form-control search" id="hairColor" placeholder="">
                 <label for="hairColor">Цвет волос</label>
             </div>
 
 
-            <button type="submit" class="btn btn-primary mt-3">Далее</button>
+            <button type="button" onclick="addArray()" class="btn btn-primary mt-3">Далее</button>
             <button type="reset" class="btn btn-primary mt-3">Сброс</button>
         </form>
     </div>
@@ -110,7 +110,7 @@
         <h2>Шаг 3: Место жительства</h2>
 
         <form action="" method="post">
-            <select class="form-select mb-3" name="countrySelect" id="country">
+            <select class="form-select mb-3 search" name="countrySelect" id="country">
                 <optgroup label="Европа">
                     <option value="Россия">Россия</option>
                     <option value="Белоруссия">Белоруссия</option>
@@ -134,7 +134,7 @@
                 <option selected>Выберите страну</option>
             </select>
 
-            <select class="form-select mb-3" name="citySelect" id="city">
+            <select class="form-select mb-3 search" name="citySelect" id="city">
                 <option selected>Выберите город</option>
                 <option value="Ростов">Ростов</option>
                 <option value="Москва">Москва</option>
@@ -145,16 +145,16 @@
             </select>
 
             <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="address">
+                <input type="text" class="form-control search" id="address">
                 <label for="address">Улица, проспект, переулок</label>
             </div>
 
             <div class="form-floating mb-3">
-                <input type="text" class="form-control addressNumber" id="addressNumber">
+                <input type="text" class="form-control addressNumber search" id="addressNumber">
                 <label for="addressNumber">Номер дома</label>
             </div>
 
-            <button type="submit" class="btn btn-primary mt-3">Далее</button>
+            <button type="button" onclick="addArray()" class="btn btn-primary mt-3">Далее</button>
             <button type="reset" class="btn btn-primary mt-3">Сброс</button>
         </form>
     </div>
@@ -168,10 +168,16 @@
                 <label for="otherInfo">Здесь вы можете указать любую инфрормацию, которую считаете нужной</label>
             </div>
 
-            <button type="submit" class="btn btn-primary mt-3">Финиш</button>
+            <button type="button" onclick="showSummary()" class="btn btn-primary mt-3">Финиш</button>
             <button type="reset" class="btn btn-primary mt-3">Сброс</button>
         </form>
     </div>
+</div>
+
+<div class="block5">
+    <p class="summaryInfo" id="summary">
+
+    </p>
 </div>
 
 <script src="script.js"></script>
