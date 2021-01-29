@@ -33,7 +33,7 @@ h2{
 }
 
 .summaryInfo{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    display: flex; !important;
+    flex-direction: column; !important;
+    flex-wrap: wrap; !important;
 }

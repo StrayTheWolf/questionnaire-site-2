@@ -1,5 +1,24 @@
-function getInfo(id){
-    return document.getElementById(id).value;
+document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('submitInfo').addEventListener('click', () => {
+        console.log('click')
+    });
+})
+
+function openBlock2(){
+    document.getElementById('block1').style.display = 'none';
+    document.getElementById('block2').style.display = 'block';
+}
+function openBlock3(){
+    document.getElementById('block2').style.display = 'none';
+    document.getElementById('block3').style.display = 'block';
+}
+function openBlock4(){
+    document.getElementById('block3').style.display = 'none';
+    document.getElementById('block4').style.display = 'block';
+}
+function openBlock5(){
+    document.getElementById('block4').style.display = 'none';
+    document.getElementById('block5').style.display = 'block';
 }
 
 
@@ -19,10 +38,10 @@ function showSummary(){
     }
 }
 
+function getInfo(id){
+    return document.getElementById(id).value;
+}
 
 
-document.addEventListener('DOMContentLoaded', () => {
-    document.getElementById('submitInfo').addEventListener('click', () => {
 
-    })
-})
+
