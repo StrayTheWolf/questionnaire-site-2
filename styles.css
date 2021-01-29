@@ -1,39 +1,45 @@
-h1{
-text-align: center;
-}
-h2{
+h1 {
     text-align: center;
 }
 
-.block1{
+h2 {
+    text-align: center;
+}
+
+.block1 {
 
 }
 
-.hairColor{
+.hairColor {
     width: 120px;
 }
-.height{
-    width: 100px;
-}
-.weight{
+
+.height {
     width: 100px;
 }
 
-.avatar{
+.weight {
+    width: 100px;
+}
+
+.avatar {
     width: 500px;
 }
 
-.addressNumber{
+.addressNumber {
     width: 100px;
 }
 
-.container{
+.container {
     width: 800px;
     padding-top: 20px;
 }
 
-.summaryInfo{
-    display: flex; !important;
-    flex-direction: column; !important;
-    flex-wrap: wrap; !important;
+.summaryInfo {
+    display: flex;
+!important;
+    flex-direction: column;
+!important;
+    flex-wrap: wrap;
+!important;
 }
