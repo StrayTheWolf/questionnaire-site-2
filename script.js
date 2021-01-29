@@ -24,7 +24,6 @@ function openBlock5() {
     document.getElementById('block5').style.display = 'block';
 }
 
-
 let array = [];
 
 function addArray() {
