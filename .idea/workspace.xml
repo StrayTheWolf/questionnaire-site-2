@@ -27,7 +27,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="js.last.introduce.type" value="LET" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../weather-site" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -40,7 +41,8 @@
       <option name="presentableId" value="Default" />
       <updated>1611824432957</updated>
       <workItem from="1611824434051" duration="37318000" />
-      <workItem from="1611917240109" duration="9486000" />
+      <workItem from="1611917240109" duration="10570000" />
+      <workItem from="1612164925260" duration="7476000" />
     </task>
     <servers />
   </component>
