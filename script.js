@@ -1,28 +1,17 @@
 'use strict'
 document.addEventListener('DOMContentLoaded',()=>{
     const elements = document.querySelectorAll('.search');
-
     elements.forEach(item =>{
         const name = item.getAttribute('id')
-
         item.addEventListener('input',(event)=>{
             localStorage.setItem(name, item.value);
         });
-
         item.value = localStorage.getItem(name);
     })
 })
 
 let array = [];
 let inputCount = 0;
-
-function localElement(id){
-   const formElement =  document.getElementById(id);
-   formElement.addEventListener('input',()=>{
-       localStorage.setItem(id,formElement.value);
-   })
-    formElement.value = localStorage.getItem(id);
-}
 
 function switchBlock(hide, show){
     document.getElementById(hide).style.display = 'none';
