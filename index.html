@@ -23,7 +23,7 @@
 
         <form action="" method="post">
             <div class="form-floating mb-3">
-                <input type="text" class="form-control search" id="fullName" placeholder="" required>
+                <input type="text"  class="form-control search" id="fullName" placeholder="" required>
                 <label for="fullName">Ф.И.О</label>
             </div>
 
@@ -33,7 +33,7 @@
             </div>
 
             <div class="form-floating mb-3">
-                <input type="date" class="form-control search" id="age" placeholder="" required>
+                <input type="date"  class="form-control search" id="age" placeholder="" required>
                 <label for="age">Дата рождения</label>
             </div>
 
@@ -66,7 +66,7 @@
                 </div>
             </fieldset>
 
-            <button type="button" onclick="openBlock2();" id="submitInfo" class="btn btn-primary mt-3">
+            <button type="button" onclick="switchBlock('block1','block2');" id="submitInfo" class="btn btn-primary mt-3">
                 Далее
             </button>
             <button type="reset" id="reset" class="btn btn-primary mt-3">Сброс</button>
@@ -92,16 +92,20 @@
             </div>
 
             <div class="form-floating mb-3 weight">
-                <input type="number" class="form-control search" id="weight" min="0" required>
+                <input type="number"  class="form-control search" id="weight" min="0" required>
                 <label for="weight">Вес кг</label>
             </div>
 
             <div class="form-floating mb-3 hairColor">
-                <input type="color" class="form-control search" id="hairColor" required>
+                <input type="color"  class="form-control search" id="hairColor" required>
                 <label for="hairColor">Цвет волос</label>
             </div>
-
-            <button type="button" onclick="openBlock3()" class="btn btn-primary mt-3">Далее</button>
+            <button type="button" onclick="switchBlock('block2','block1');" class="btn btn-primary mt-3">
+                Назад
+            </button>
+            <button type="button" onclick="switchBlock('block2','block3');" class="btn btn-primary mt-3">
+                Далее
+            </button>
             <button type="reset" class="btn btn-primary mt-3">Сброс</button>
         </form>
     </div>
@@ -144,16 +148,20 @@
             </select>
 
             <div class="form-floating mb-3">
-                <input type="text" class="form-control search" id="address" required>
+                <input type="text"  class="form-control search" id="address" required>
                 <label for="address">Адресс</label>
             </div>
 
             <div class="form-floating mb-3">
-                <input type="text" class="form-control addressNumber search" id="addressNumber" required>
+                <input type="text"  class="form-control addressNumber search" id="addressNumber" required>
                 <label for="addressNumber">Номер дома</label>
             </div>
-
-            <button type="button" onclick="openBlock4()" class="btn btn-primary mt-3">Далее</button>
+            <button type="button" onclick="switchBlock('block3','block2');" class="btn btn-primary mt-3">
+                Назад
+            </button>
+            <button type="button" onclick="switchBlock('block3','block4');" class="btn btn-primary mt-3">
+                Далее
+            </button>
             <button type="reset" class="btn btn-primary mt-3">Сброс</button>
         </form>
     </div>
@@ -163,11 +171,16 @@
         <form action="" method="post">
 
             <div class="form-floating mb-3">
-                <input type="text" class="form-control " id="otherInfo">
+                <input type="text"  class="form-control search" id="otherInfo">
                 <label for="otherInfo">Здесь вы можете указать любую инфрормацию, которую считаете нужной</label>
             </div>
-
-            <button type="button" onclick="addArray(); openBlock5(); showSummary();" class="btn btn-primary mt-3">Финиш</button>
+            <button type="button" onclick="switchBlock('block4','block3');" class="btn btn-primary mt-3">
+                Назад
+            </button>
+            <button type="button" onclick="addArray(); switchBlock('block4','block5'); showSummary();"
+                    class="btn btn-primary mt-3">
+                Финиш
+            </button>
             <button type="reset" class="btn btn-primary mt-3">Сброс</button>
         </form>
     </div>

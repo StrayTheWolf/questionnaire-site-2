@@ -1,31 +1,33 @@
-document.addEventListener('DOMContentLoaded', () => {
-    document.getElementById('submitInfo').addEventListener('click', () => {
-        console.log('click')
-    });
+'use strict'
+document.addEventListener('DOMContentLoaded',()=>{
+    const elements = document.querySelectorAll('.search');
+
+    elements.forEach(item =>{
+        const name = item.getAttribute('id')
+
+        item.addEventListener('input',(event)=>{
+            localStorage.setItem(name, item.value);
+        });
+
+        item.value = localStorage.getItem(name);
+    })
 })
-
-
-function openBlock2() {
-    document.getElementById('block1').style.display = 'none';
-    document.getElementById('block2').style.display = 'block';
-}
-function openBlock3() {
-    document.getElementById('block2').style.display = 'none';
-    document.getElementById('block3').style.display = 'block';
-}
-function openBlock4() {
-    document.getElementById('block3').style.display = 'none';
-    document.getElementById('block4').style.display = 'block';
-}
-function openBlock5() {
-    document.getElementById('block4').style.display = 'none';
-    document.getElementById('block5').style.display = 'block';
-}
-
-
 
 let array = [];
 let inputCount = 0;
+
+function localElement(id){
+   const formElement =  document.getElementById(id);
+   formElement.addEventListener('input',()=>{
+       localStorage.setItem(id,formElement.value);
+   })
+    formElement.value = localStorage.getItem(id);
+}
+
+function switchBlock(hide, show){
+    document.getElementById(hide).style.display = 'none';
+    document.getElementById(show).style.display = 'block';
+}
 
 function addArray() {
     let data = document.querySelectorAll('.search')
@@ -42,7 +44,7 @@ function addArray() {
             continue;
         }
         let textField = data[inputCount].labels[0].innerText;
-        array[i] = textField + " " + data[i].value;
+        array[i] = textField + " : " + data[i].value;
         inputCount++;
 
     }
@@ -51,13 +53,9 @@ function addArray() {
 function showSummary() {
     for (let i = 0; i < array.length; i++) {
 
-        let html = array[i];
-        document.getElementById('summary').insertAdjacentHTML("beforebegin", '<p></p>' + array[i]);
+        let html =  array[i];
+        document.getElementById('summary').insertAdjacentHTML("beforebegin", '<p></p>' + html);
     }
-}
-
-function getInfo(id) {
-    return document.getElementById(id).value;
 }
 
 
