@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1ba312dd-34ce-4116-863e-cec18bcd1d72" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +27,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="LET" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../weather-site" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -41,7 +42,7 @@
       <workItem from="1611824434051" duration="37318000" />
       <workItem from="1611917240109" duration="10570000" />
       <workItem from="1612164925260" duration="8242000" />
-      <workItem from="1612339171013" duration="11350000" />
+      <workItem from="1612339171013" duration="15003000" />
     </task>
     <servers />
   </component>
