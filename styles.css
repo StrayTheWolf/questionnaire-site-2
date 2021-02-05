@@ -43,3 +43,15 @@ h2 {
     flex-wrap: wrap;
 !important;
 }
+
+#overlay {
+    position: fixed;
+    padding-top: 50px;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.65);
+    text-align: center;
+}
