@@ -54,7 +54,8 @@ function showSummary() {
 }
 
 function showDataIfLocalHas() {
-    if (localStorage != null) {
+    if (localStorage.length >= 1) {
+        console.log(localStorage.length)
         document.getElementById('overlay').style.display = 'block';
         document.getElementById('block1').style.display = 'none';
         document.getElementById('header-title').style.display = 'none';
