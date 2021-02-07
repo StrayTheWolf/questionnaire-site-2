@@ -12,12 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         item.value = localStorage.getItem(name);
     })
-
     showDataIfLocalHas();
 })
-
-let array = [];
-let inputCount = 0;
 
 function switchBlock(hide, show) {
     document.getElementById(hide).style.display = 'none';
@@ -26,6 +22,9 @@ function switchBlock(hide, show) {
 
 function addArray() {
     let data = document.querySelectorAll('.search')
+
+    let array = [];
+    let inputCount = 0;
 
     for (let i = 0; i < data.length; i++) {
         if (inputCount === 9) {
@@ -42,13 +41,15 @@ function addArray() {
         array[i] = textField + " : " + data[i].value;
         inputCount++;
 
+        console.log(array);
     }
+    return array
 }
 
 function showSummary() {
-    for (let i = 0; i < array.length; i++) {
-
-        let html = array[i];
+    let filledArray = addArray();
+    for (let i = 0; i < filledArray.length; i++) {
+        let html = filledArray[i];
         document.getElementById('summary').insertAdjacentHTML("beforebegin", '<p></p>' + html);
     }
 }
@@ -61,6 +62,3 @@ function showDataIfLocalHas() {
         document.getElementById('header-title').style.display = 'none';
     }
 }
-
-
-
